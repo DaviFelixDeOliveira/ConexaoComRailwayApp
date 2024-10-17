@@ -1,0 +1,18 @@
+<?php
+
+$link = mysql_connect('mysql://root:jUWFOVChJePniVbIkgbXxOAbaNXSSisv@junction.proxy.rlwy.net:23917/railway');
+
+if (!$link) 
+
+{
+
+	die('Não pode ser conectado: ' . mysql_error());
+
+}
+
+echo 'Conexão com sucesso!';
+
+mysql_close($link);
+
+?>
+ 
